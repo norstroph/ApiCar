@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 public class Car {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long car_id;
     
     private Double price;
@@ -19,7 +19,6 @@ public class Car {
 
     @OneToOne
     @JoinColumn(name = "registration_id", referencedColumnName = "registrationId")
-
     private Registration registration;
     @ManyToMany
     @JoinTable(name = "car_feature", joinColumns = @JoinColumn(name = "car_id"), inverseJoinColumns = @JoinColumn(name = "feature_id"))

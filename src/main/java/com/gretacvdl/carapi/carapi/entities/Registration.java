@@ -7,7 +7,7 @@ import java.util.Date;
 @Entity
 public class Registration {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long registrationId;
     private String plateNumber;
     private Date experitedate;

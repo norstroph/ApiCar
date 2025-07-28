@@ -7,7 +7,7 @@ import java.util.List;
 @Entity
 public class Feature {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long featureId;
     private String name;
     private String description;

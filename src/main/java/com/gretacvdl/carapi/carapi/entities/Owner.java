@@ -9,7 +9,7 @@ import jakarta.validation.constraints.Size;
 @Entity
 public class Owner {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long OwnerId ;
     private String name;
     @Email(message = "Format d’email invalide")
